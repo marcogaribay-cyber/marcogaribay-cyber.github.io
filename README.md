@@ -1,1 +1,0 @@
-# marcogaribay-cyber.github.io
