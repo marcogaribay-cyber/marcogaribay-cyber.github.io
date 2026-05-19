@@ -1,81 +1,222 @@
+
+     
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,
-  initial-scale=1.0">
-    <title>Marco Garibay - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Garibay</title>
     <style>
-    body{ font-family:'Segoe UI',Tahoma,Geneva,Verdana,
-  sans-serif;line-height:1.6;color:#333;max-width:800px;
-  margin:40px auto;padding:20px;background-color:
-  #f4f4f4;}
-    header{border-bottom:2px solid #2c3e50;
-  padding-bottom:20px;margin-bottom:20px;text-align:
-  center;}
-   h1{margin:0;color:#2c3e50;
-  padding-bottom:20px;margin-bottom:20px;text-align:center;}
-	h1{margin:0;color:#2c3e50;}
-	h2{border-bottom:1px solid #ddd;padding-bottom:5px;
-color:#2c3e50;margin-top:30px;}
-	.contact-info{font-size:0.9em;color:#666;}
-	.job-title{font-weight:bold;color:#333;display:flex;
-justify-content:space-between;}
-	.company{font-style:italic;color:#555;}
-	.date{color:#777;font-size:0.9em;}
-	</style>
+        :root {
+            --bg-color: #0b0f19;
+            --text-color: #f1f5f9;
+            --accent-color: #38bdf8;
+            --accent-dim: #0284c7;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        h1 { 
+            color: var(--accent-color); 
+            margin: 0 0 10px 0; 
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+        .contact-info {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+        .links { 
+            margin-top: 15px; 
+        }
+        .links a { 
+            color: var(--accent-color); 
+            margin-right: 20px; 
+            text-decoration: none; 
+            font-weight: 600; 
+        }
+        .links a:hover { 
+            text-decoration: underline; 
+        }
+        h2 { 
+            color: var(--accent-color); 
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 8px; 
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+        .badge-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .badge {
+            background-color: var(--card-bg);
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+            color: #e2e8f0;
+        }
+        .badge.cert {
+            border-color: var(--accent-dim);
+            background-color: rgba(2, 132, 199, 0.1);
+        }
+        .job, .project {
+            background-color: var(--card-bg);
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+        .date {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .company { 
+            color: var(--accent-color); 
+            font-style: italic; 
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        ul { 
+            padding-left: 20px; 
+            margin-top: 10px;
+        }
+        li { 
+            margin-bottom: 8px; 
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+        strong {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-	<header>
-	  <h1>Marco Garibay</h1>
-	  <div class="contact-info">
-	    West Berlin, NJ 08091 |marcogaribay82@gmail.com|github.com/marcogaribay-cyber| +1 856 278 4695</div>
-	</header>
+<div class="container">
+    <header>
+        <h1>MARCO GARIBAY</h1>
+        <div class="contact-info">Southern New Jersey | github.com/marcogaribay-cyber</div>
+        <div class="links">
+            <a>📩 marcogaribay82@gmail.com</a>
+        </div>
+    </header>
 
-	<section id="summary">
-	  <h2>Professional Summary</h2>
-	  <p>Highly proficient technician with a strong back ground in computer science, seeking to apply a unique blend of technical expertise and software knowledge. Eager to leverage extensive experience in a new technical enviroment.</p>
-</section>
+    <h2>Professional Summary</h2>
+    <p>Technical professional with a strong background in troubleshooting, electrical systems diagnostics, and operational leadership. Combines advanced analytical skills with active technical training in networking protocols, operating system architectures, and Linux environments. Proven ability isolate complex system faults, execute component replacements, and follow strict procedural workflows to ensure high reliability and up-time.</p>
 
-	<section id="experience">
-	  <h2>Work Experience</h2>
+    <h2>Active Certifications & Credentials</h2>
+    <div class="badge-grid">
+        <div class="badge cert">🛡️ Google Cybersecurity Professional Certificate — (In Progress / Active Pursuit)</div>
+        <div class="badge cert">⚙️ CompTIA Security+ — (Exam Prep / Active Pursuit)</div>
+    </div>
 
-	<div class="job">
-	   <div class="job-title">
-	   <span>Manager</span>
-	   <span class="date">May 2021 to Present</span>
-	</div>
-	<div class="company">Mr. Tire Auto Service Centers</div>
-	<ul>
-	  <li>Manage day to day operation of busy shop while keeping profits high and retaining customers.</li>
-	  <li>Perform cash handling and profit and loss statements as well as bank deposits.</li>
-	</ul>
-	</div>
+    <h2>Core Technical Competencies</h2>
+    <div class="badge-grid">
+        <div class="badge">Data Center Infrastructure</div>
+        <div class="badge">Tier 1/2 Hardware Diagnostics</div>
+        <div class="badge">Component-Level Swaps</div>
+        <div class="badge">Linux CLI & OS Basics</div>
+        <div class="badge">Networking Fundamentals</div>
+        <div class="badge">Structured Cabling & Testing</div>
+        <div class="badge">Physical Access Control & CCTV</div>
+        <div class="badge">Change Management Adherence</div>
+        <div class="badge">Operational Shift Leadership</div>
+    </div>
 
-	<div class="job">
-	 <div class="job-title">
-	   <span>Automotive Technician</span>
-	   <span class="date">September 2017 to August 2021</span>
-	</div>
-	<div class="company">Burns Buick GMC/Hyundai</div>
-	<ul>
-	   <li>Diagnose and perform maintenance on customer vehicles in a professional manner and explain repairs clearly to customers.</li>
-	</ul>
-	</div>
+    <h2>Technical Infrastructure Projects</h2>
+    <div class="project">
+        <div class="project-header">
+            <span class="title">Local NAS Server Deployment & Management</span>
+        </div>
+        <p>Engineered and deployed a dedicated, local Network Attached Storage (NAS) server architecture from repurposed computing hardware to host a secure, high-capacity digital asset library. Configured a dedicated Linux operating system distribution to manage system administration, define user data permissions, optimize network protocols, and maintain storage container arrays.</p>
+    </div>
+    
+    <div class="project">
+        <div class="project-header">
+            <span class="title">Web-Based Logic and Interactive Simulation Development</span>
+        </div>
+        <p>Developing robust interactive web applications utilizing HTML5 and JavaScript. Focused on building front-end interfaces, structural logic flow paths, data tracking event structures, and optimized processing execution loops.</p>
+    </div>
 
-	</section>
+    <h2>Professional Infrastructure & Leadership Experience</h2>
+    <div class="job">
+        <div class="job-header">
+            <span class="title">Senior Systems Diagnostics Specialist & Team Lead</span>
+            <span class="date">2020 – Present</span>
+        </div>
+        <div class="company">Advanced Systems Maintenance & Logistics Sector</div>
+        <ul>
+            <li><strong>Advanced Hardware Diagnostics:</strong> Isolate complex, intermittent system faults across high-voltage and low-voltage interconnected infrastructure grids utilizing digital software, precise diagnostic computers, and physical testing equipment.</li>
+            <li><strong>Component-Level Repairs:</strong> Execute meticulous physical component swaps, electrical wiring tracings, and complex system rebuilds within tight operational windows to maximize infrastructure uptime and performance.</li>
+            <li><strong>SOP & Documentation:</strong> Generate detailed technical fault analysis sheets, service logs, and diagnostic summary reports while strictly interpreting intricate manufacturing schematics and circuit logic documentation.</li>
+            <li><strong>Operations Leadership:</strong> Direct shift workflows, enforce rigid safety and quality control compliance frameworks, and manage seamless handoff logs across operational shifts.</li>
+        </ul>
+    </div>
 
-	<section id="education">
-	   <h2>Education</h2>
-	   <div class="job-title">
-		<span>Automotive Technology/Business Technology</span>
-	   <span class="date">June 2001</span>
-	</div>
-	<div class="company">Camden County Technical School</div>
-	</section> 
+    <div class="job">
+        <div class="job-header">
+            <span class="title">Operations Manager / Leader</span>
+            <span class="date">Prior Experience</span>
+        </div>
+        <div class="company">United States Army & Corporate Operational Leadership</div>
+        <ul>
+            <li><strong>Physical Security Compliance:</strong> Supervised, enforced, and audited strict site security protocols, managed physical access controls, and protected high-value secure installations.</li>
+            <li><strong>Asset Accountability:</strong> Maintained 100% accountability, preventative lifecycle logs, and physical infrastructure security for multi-million-dollar technology, vehicles, and weapon platforms under high-stress conditions.</li>
+            <li><strong>Team Training & Readiness:</strong> Structured and executed rigorous operational training paths to successfully transition technical personnel into highly efficient hardware maintenance roles.</li>
+        </ul>
+    </div>
+</div>
 
 </body>
 </html>
-
-
+<!/*
+      ______ _  __ ______ ______ __    _
+    /    ___| |/ /|   ___|   ___|  \  | |
+    \   \___|   / |  |___|  |___|   \ | |
+     `--    \   \ |   ___|   ___| '  \| |
+     \___/  /  \ \|  |___|  |___| |\    |
+    |______/|_| \________|______|_| \___|
+    Designed & Coded by Marco
+    
+    */>
